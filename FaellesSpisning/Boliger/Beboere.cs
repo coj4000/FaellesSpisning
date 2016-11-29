@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace FaellesSpisning.Boliger
 {
-    class Beboere
+    public class Beboere
     {
         public Beboere()
         {
             
         }
 
-        public void Voksne(string navn)
+        public string Voksne(string navn)
         {
-            
+            return navn;   
         }
         public void Unge(int antal)
         { }

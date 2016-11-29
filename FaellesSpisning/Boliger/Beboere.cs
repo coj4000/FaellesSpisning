@@ -13,7 +13,7 @@ namespace FaellesSpisning.Boliger
             
         }
 
-        public void Voksne(string navn, int antal)
+        public void Voksne(string navn)
         {
             
         }

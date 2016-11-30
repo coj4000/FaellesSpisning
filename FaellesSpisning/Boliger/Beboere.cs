@@ -13,9 +13,9 @@ namespace FaellesSpisning.Boliger
             
         }
 
-        public void Voksne(string navn)
+        public String Voksne(string navn)
         {
-            
+            return navn;
         }
         public void Unge(int antal)
         { }

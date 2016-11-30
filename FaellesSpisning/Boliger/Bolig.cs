@@ -8,5 +8,10 @@ namespace FaellesSpisning.Boliger
 {
     class Bolig
     {
+        Beboere beboere = new Beboere();
+        public Bolig(int voksenantal, string voksen, int unge, int børn, int børnu3)
+        {
+            
+        }
     }
 }

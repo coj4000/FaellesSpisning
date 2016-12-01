@@ -36,6 +36,7 @@ namespace FaellesSpisning.Matematik
             {
                 total += pris * (bolig.børnu3 * 0.00000);
             }
+            //Christain fix this
 
             
             return total;

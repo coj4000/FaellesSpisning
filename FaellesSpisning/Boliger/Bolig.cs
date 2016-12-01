@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FaellesSpisning.Boliger
 {
-    public class Bolig
+    class Bolig
     {
         public int voksenantal;
         public int unge;
@@ -38,5 +38,6 @@ namespace FaellesSpisning.Boliger
         {
             voksenantal = 4;
         }
+
     }
 }

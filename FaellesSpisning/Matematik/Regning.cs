@@ -34,7 +34,7 @@ namespace FaellesSpisning.Matematik
             }
             if (bolig.børnu3 > 0)
             {
-                total += pris * (bolig.børnu3 * 0.0);
+                total += pris * (bolig.børnu3 * 0.00000);
             }
 
             

@@ -8,5 +8,7 @@ namespace FaellesSpisning.Boliger
 {
     class Bolig
     {
+
+ 
     }
 }

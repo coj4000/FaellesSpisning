@@ -8,35 +8,31 @@ namespace FaellesSpisning.Boliger
 {
     class Bolig
     {
-        public int voksenantal;
-        public int unge;
-        public int børn;
-        public int børnu3;
-
-        Beboere beboere = new Beboere();
+      
+        
         public Bolig()
         {
-
+            
         }
 
-        public void Bolig1(string voksne, int unge, int børn, int børnu3)
+        public string Voksen(string navn)
         {
-            voksenantal = 1;
+            return navn;
         }
 
-        public void Bolig2(string voksne, string voksne2, int unge, int børn, int børnu3)
+        public string Ung(string navn)
         {
-            voksenantal = 2;
+            return navn;
         }
 
-        public void Bolig3(string voksne, string voksne2, string voksne3, int unge, int børn, int børnu3)
+        public string Børn(string navn)
         {
-            voksenantal = 3;
+            return navn;
         }
 
-        public void Bolig4(string voksne, string voksne2, string voksne3, string voksne4, int unge, int børn, int børnu3)
+        public void BørnU3()
         {
-            voksenantal = 4;
+            
         }
 
     }

@@ -8,48 +8,48 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="button" Content="Mandag" HorizontalAlignment="Left" Height="75" Margin="194,40,0,0" VerticalAlignment="Top" Width="175"/>
-        <Button x:Name="button_Copy" Content="Tirsdag" HorizontalAlignment="Left" Height="75" Margin="370,40,0,0" VerticalAlignment="Top" Width="175"/>
-        <Button x:Name="button_Copy1" Content="Onsdag" HorizontalAlignment="Left" Height="75" Margin="544,40,0,0" VerticalAlignment="Top" Width="176"/>
-        <Button x:Name="button_Copy2" Content="Torsdag" HorizontalAlignment="Left" Height="75" Margin="719,40,0,0" VerticalAlignment="Top" Width="176"/>
-        <Button x:Name="button_Copy3" Content="Fredag" HorizontalAlignment="Left" Height="75" Margin="896,41,0,0" VerticalAlignment="Top" Width="176"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="23,116,0,0" TextWrapping="Wrap" Text="Menu" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="171" Height="45"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="51" Margin="23,161,0,0" TextWrapping="Wrap" Text="Chef Kok" VerticalAlignment="Top" Width="171"/>
-        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="23,212,0,0" TextWrapping="Wrap" Text="Kok" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="171" Height="45"/>
-        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="23,257,0,0" TextWrapping="Wrap" Text="Opryddere" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="171" Height="46"/>
-        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Height="45" Margin="194,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="175"/>
-        <TextBlock x:Name="textBlock2_Copy" HorizontalAlignment="Left" Height="51" Margin="194,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="175"/>
-        <TextBlock x:Name="textBlock2_Copy1" HorizontalAlignment="Left" Height="45" Margin="194,212,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="175"/>
-        <TextBlock x:Name="textBlock2_Copy2" HorizontalAlignment="Left" Height="46" Margin="194,257,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="175"/>
-        <TextBlock x:Name="textBlock2_Copy3" HorizontalAlignment="Left" Height="45" Margin="370,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="175"/>
-        <TextBlock x:Name="textBlock2_Copy4" HorizontalAlignment="Left" Height="46" Margin="370,257,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="175"/>
-        <TextBlock x:Name="textBlock2_Copy5" HorizontalAlignment="Left" Height="45" Margin="370,212,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="175"/>
-        <TextBlock x:Name="textBlock2_Copy6" HorizontalAlignment="Left" Height="51" Margin="370,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="175"/>
-        <TextBlock x:Name="textBlock2_Copy7" HorizontalAlignment="Left" Height="45" Margin="545,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
-        <TextBlock x:Name="textBlock2_Copy8" HorizontalAlignment="Left" Height="46" Margin="545,257,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
-        <TextBlock x:Name="textBlock2_Copy9" HorizontalAlignment="Left" Height="45" Margin="545,212,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
-        <TextBlock x:Name="textBlock2_Copy10" HorizontalAlignment="Left" Height="51" Margin="545,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
-        <TextBlock x:Name="textBlock2_Copy11" HorizontalAlignment="Left" Height="45" Margin="726,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="171"/>
-        <TextBlock x:Name="textBlock2_Copy12" HorizontalAlignment="Left" Height="46" Margin="721,257,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
-        <TextBlock x:Name="textBlock2_Copy13" HorizontalAlignment="Left" Height="45" Margin="721,212,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
-        <TextBlock x:Name="textBlock2_Copy14" HorizontalAlignment="Left" Height="51" Margin="721,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
-        <TextBlock x:Name="textBlock2_Copy15" HorizontalAlignment="Left" Height="45" Margin="902,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
-        <TextBlock x:Name="textBlock2_Copy16" HorizontalAlignment="Left" Height="46" Margin="896,257,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
-        <TextBlock x:Name="textBlock2_Copy17" HorizontalAlignment="Left" Height="45" Margin="896,212,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
-        <TextBlock x:Name="textBlock2_Copy18" HorizontalAlignment="Left" Height="51" Margin="896,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
-        <ListView x:Name="listView" HorizontalAlignment="Left" Height="331" Margin="1083,52,0,0" VerticalAlignment="Top" Width="324"/>
-        <TextBox x:Name="Navn" HorizontalAlignment="Left" Height="73" Margin="194,478,0,0" TextWrapping="Wrap" Text="Navn" VerticalAlignment="Top" Width="175"/>
-        <TextBox x:Name="Stilling" HorizontalAlignment="Left" Height="73" Margin="545,478,0,0" TextWrapping="Wrap" Text="Stilling" VerticalAlignment="Top" Width="176"/>
-        <TextBox x:Name="Dag" HorizontalAlignment="Left" Height="73" Margin="370,478,0,0" TextWrapping="Wrap" Text="Dag" VerticalAlignment="Top" Width="175"/>
-        <TextBox x:Name="Pris" HorizontalAlignment="Left" Height="73" Margin="545,551,0,0" TextWrapping="Wrap" Text="Pris" VerticalAlignment="Top" Width="176"/>
-        <TextBox x:Name="Dag1" HorizontalAlignment="Left" Height="73" Margin="370,551,0,0" TextWrapping="Wrap" Text="Dag" VerticalAlignment="Top" Width="175"/>
-        <TextBox x:Name="Ret" HorizontalAlignment="Left" Height="73" Margin="194,551,0,0" TextWrapping="Wrap" Text="Ret" VerticalAlignment="Top" Width="175"/>
-        <Button x:Name="Tilføj" Content="Tilføj" HorizontalAlignment="Left" Height="73" Margin="721,478,0,0" VerticalAlignment="Top" Width="176"/>
-        <Button x:Name="Tilføj1" Content="Tilføj" HorizontalAlignment="Left" Height="73" Margin="721,551,0,0" VerticalAlignment="Top" Width="176"/>
-        <TextBox x:Name="Stilling_Copy" HorizontalAlignment="Left" Height="73" Margin="1136,451,0,0" TextWrapping="Wrap" Text="Bolig" VerticalAlignment="Top" Width="146"/>
-        <TextBox x:Name="Stilling_Copy1" HorizontalAlignment="Left" Height="73" Margin="990,551,0,0" TextWrapping="Wrap" Text="Bolig" VerticalAlignment="Top" Width="146"/>
-        <TextBox x:Name="Stilling_Copy2" HorizontalAlignment="Left" Height="73" Margin="990,451,0,0" TextWrapping="Wrap" Text="Dag" VerticalAlignment="Top" Width="146"/>
-        <Button x:Name="Tilføj_Copy" Content="Tilføj" HorizontalAlignment="Left" Height="73" Margin="1282,451,0,0" VerticalAlignment="Top" Width="126"/>
-        <Button x:Name="Tilføj_Copy1" Content="Hent" HorizontalAlignment="Left" Height="73" Margin="1282,551,0,0" VerticalAlignment="Top" Width="126"/>
+        <Button x:Name="button" Content="Mandag" HorizontalAlignment="Left" Height="75" Margin="200,40,0,0" VerticalAlignment="Top" Width="170"/>
+        <Button x:Name="button_Copy" Content="Tirsdag" HorizontalAlignment="Left" Height="75" Margin="370,40,0,0" VerticalAlignment="Top" Width="170"/>
+        <Button x:Name="button_Copy1" Content="Onsdag" HorizontalAlignment="Left" Height="75" Margin="540,40,0,0" VerticalAlignment="Top" Width="170" Click="button_Copy1_Click"/>
+        <Button x:Name="button_Copy2" Content="Torsdag" HorizontalAlignment="Left" Height="75" Margin="710,40,0,0" VerticalAlignment="Top" Width="170"/>
+        <Button x:Name="button_Copy3" Content="Fredag" HorizontalAlignment="Left" Height="75" Margin="880,40,0,0" VerticalAlignment="Top" Width="170"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="23,116,0,0" TextWrapping="Wrap" Text="Menu" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="171" Height="117"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="117" Margin="23,233,0,0" TextWrapping="Wrap" Text="Chef Kok" VerticalAlignment="Top" Width="171"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="23,350,0,0" TextWrapping="Wrap" Text="Kok" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="171" Height="117"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="23,467,0,0" TextWrapping="Wrap" Text="Opryddere" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="171" Height="117"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Height="117" Margin="200,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
+        <TextBlock x:Name="textBlock2_Copy" HorizontalAlignment="Left" Height="117" Margin="200,233,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
+        <TextBlock x:Name="textBlock2_Copy1" HorizontalAlignment="Left" Height="117" Margin="200,350,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
+        <TextBlock x:Name="textBlock2_Copy2" HorizontalAlignment="Left" Height="117" Margin="200,467,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
+        <TextBlock x:Name="textBlock2_Copy3" HorizontalAlignment="Left" Height="117" Margin="370,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
+        <TextBlock x:Name="textBlock2_Copy4" HorizontalAlignment="Left" Height="117" Margin="370,467,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
+        <TextBlock x:Name="textBlock2_Copy5" HorizontalAlignment="Left" Height="117" Margin="370,350,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
+        <TextBlock x:Name="textBlock2_Copy6" HorizontalAlignment="Left" Height="117" Margin="370,233,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
+        <TextBlock x:Name="textBlock2_Copy7" HorizontalAlignment="Left" Height="117" Margin="540,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
+        <TextBlock x:Name="textBlock2_Copy8" HorizontalAlignment="Left" Height="117" Margin="540,467,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
+        <TextBlock x:Name="textBlock2_Copy9" HorizontalAlignment="Left" Height="117" Margin="540,350,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
+        <TextBlock x:Name="textBlock2_Copy10" HorizontalAlignment="Left" Height="117" Margin="540,233,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
+        <TextBlock x:Name="textBlock2_Copy11" HorizontalAlignment="Left" Height="117" Margin="710,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
+        <TextBlock x:Name="textBlock2_Copy12" HorizontalAlignment="Left" Height="117" Margin="710,467,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
+        <TextBlock x:Name="textBlock2_Copy13" HorizontalAlignment="Left" Height="117" Margin="710,350,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
+        <TextBlock x:Name="textBlock2_Copy14" HorizontalAlignment="Left" Height="117" Margin="710,233,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
+        <TextBlock x:Name="textBlock2_Copy15" HorizontalAlignment="Left" Height="117" Margin="880,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
+        <TextBlock x:Name="textBlock2_Copy16" HorizontalAlignment="Left" Height="117" Margin="880,467,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
+        <TextBlock x:Name="textBlock2_Copy17" HorizontalAlignment="Left" Height="116" Margin="896,365,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
+        <TextBlock x:Name="textBlock2_Copy18" HorizontalAlignment="Left" Height="117" Margin="880,233,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="544" Margin="1083,40,0,0" VerticalAlignment="Top" Width="324"/>
+        <TextBox x:Name="Navn" HorizontalAlignment="Left" Height="73" Margin="194,756,0,0" TextWrapping="Wrap" Text="Navn" VerticalAlignment="Top" Width="175"/>
+        <TextBox x:Name="Stilling" HorizontalAlignment="Left" Height="73" Margin="545,756,0,0" TextWrapping="Wrap" Text="Stilling" VerticalAlignment="Top" Width="176"/>
+        <TextBox x:Name="Dag" HorizontalAlignment="Left" Height="73" Margin="370,756,0,0" TextWrapping="Wrap" Text="Dag" VerticalAlignment="Top" Width="175"/>
+        <TextBox x:Name="Pris" HorizontalAlignment="Left" Height="73" Margin="545,829,0,0" TextWrapping="Wrap" Text="Pris" VerticalAlignment="Top" Width="176"/>
+        <TextBox x:Name="Dag1" HorizontalAlignment="Left" Height="73" Margin="370,829,0,0" TextWrapping="Wrap" Text="Dag" VerticalAlignment="Top" Width="175"/>
+        <TextBox x:Name="Ret" HorizontalAlignment="Left" Height="73" Margin="194,829,0,0" TextWrapping="Wrap" Text="Ret" VerticalAlignment="Top" Width="175"/>
+        <Button x:Name="Tilføj" Content="Tilføj" HorizontalAlignment="Left" Height="73" Margin="721,756,0,0" VerticalAlignment="Top" Width="176"/>
+        <Button x:Name="Tilføj1" Content="Tilføj" HorizontalAlignment="Left" Height="73" Margin="721,829,0,0" VerticalAlignment="Top" Width="176"/>
+        <TextBox x:Name="Stilling_Copy" HorizontalAlignment="Left" Height="73" Margin="1136,729,0,0" TextWrapping="Wrap" Text="Bolig" VerticalAlignment="Top" Width="146"/>
+        <TextBox x:Name="Stilling_Copy1" HorizontalAlignment="Left" Height="73" Margin="990,829,0,0" TextWrapping="Wrap" Text="Bolig" VerticalAlignment="Top" Width="146"/>
+        <TextBox x:Name="Stilling_Copy2" HorizontalAlignment="Left" Height="73" Margin="990,729,0,0" TextWrapping="Wrap" Text="Dag" VerticalAlignment="Top" Width="146"/>
+        <Button x:Name="Tilføj_Copy" Content="Tilføj" HorizontalAlignment="Left" Height="73" Margin="1282,729,0,0" VerticalAlignment="Top" Width="126"/>
+        <Button x:Name="Tilføj_Copy1" Content="Hent" HorizontalAlignment="Left" Height="73" Margin="1282,829,0,0" VerticalAlignment="Top" Width="126"/>
     </Grid>
 </Page>

@@ -27,26 +27,32 @@ namespace FaellesSpisning.Boliger
 
         private string Aldersgrænse(int alder)
         {
-            string grænse;
+
+            string grænse = "";
             if (alder > 15)
             {
                 grænse = "Voksen";
+                return grænse;
             }
             if (alder >= 7 && alder <= 15)
             {
                 grænse = "Ung";
+                return grænse;
             }
             if (alder >= 3 && alder <= 6)
             {
                 grænse = "Barn";
+                return grænse;
             }
             if (alder < 3 && alder > 0)
             {
                 grænse = "BarnU3";
+                return grænse;
             }
             if (alder < 0)
             {
                 grænse = "Umugelit";
+                return grænse;
             }
             return grænse;
 

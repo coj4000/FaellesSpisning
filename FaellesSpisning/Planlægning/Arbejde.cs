@@ -8,5 +8,19 @@ namespace FaellesSpisning.Planlægning
 {
     class Arbejde
     {
+        public string Chefkok(string name)
+        {
+            return name;
+        }
+
+        public string Kok(string name)
+        {
+            return name;
+        }
+
+        public string Opryder(string name)
+        {
+            return name;
+        }
     }
 }

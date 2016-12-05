@@ -10,9 +10,9 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Button x:Name="button" Content="Mandag" HorizontalAlignment="Left" Height="75" Margin="194,40,0,0" VerticalAlignment="Top" Width="175"/>
         <Button x:Name="button_Copy" Content="Tirsdag" HorizontalAlignment="Left" Height="75" Margin="370,40,0,0" VerticalAlignment="Top" Width="175"/>
-        <Button x:Name="button_Copy1" Content="Onsdag" HorizontalAlignment="Left" Height="75" Margin="545,40,0,0" VerticalAlignment="Top" Width="176"/>
-        <Button x:Name="button_Copy2" Content="Torsdag" HorizontalAlignment="Left" Height="75" Margin="721,40,0,0" VerticalAlignment="Top" Width="176"/>
-        <Button x:Name="button_Copy3" Content="Fredag" HorizontalAlignment="Left" Height="75" Margin="896,40,0,0" VerticalAlignment="Top" Width="176"/>
+        <Button x:Name="button_Copy1" Content="Onsdag" HorizontalAlignment="Left" Height="75" Margin="544,40,0,0" VerticalAlignment="Top" Width="176"/>
+        <Button x:Name="button_Copy2" Content="Torsdag" HorizontalAlignment="Left" Height="75" Margin="719,40,0,0" VerticalAlignment="Top" Width="176"/>
+        <Button x:Name="button_Copy3" Content="Fredag" HorizontalAlignment="Left" Height="75" Margin="896,41,0,0" VerticalAlignment="Top" Width="176"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="23,116,0,0" TextWrapping="Wrap" Text="Menu" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="171" Height="45"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="51" Margin="23,161,0,0" TextWrapping="Wrap" Text="Chef Kok" VerticalAlignment="Top" Width="171"/>
         <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="23,212,0,0" TextWrapping="Wrap" Text="Kok" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="171" Height="45"/>
@@ -29,11 +29,11 @@
         <TextBlock x:Name="textBlock2_Copy8" HorizontalAlignment="Left" Height="46" Margin="545,257,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
         <TextBlock x:Name="textBlock2_Copy9" HorizontalAlignment="Left" Height="45" Margin="545,212,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
         <TextBlock x:Name="textBlock2_Copy10" HorizontalAlignment="Left" Height="51" Margin="545,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
-        <TextBlock x:Name="textBlock2_Copy11" HorizontalAlignment="Left" Height="45" Margin="721,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
+        <TextBlock x:Name="textBlock2_Copy11" HorizontalAlignment="Left" Height="45" Margin="726,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="171"/>
         <TextBlock x:Name="textBlock2_Copy12" HorizontalAlignment="Left" Height="46" Margin="721,257,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
         <TextBlock x:Name="textBlock2_Copy13" HorizontalAlignment="Left" Height="45" Margin="721,212,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
         <TextBlock x:Name="textBlock2_Copy14" HorizontalAlignment="Left" Height="51" Margin="721,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
-        <TextBlock x:Name="textBlock2_Copy15" HorizontalAlignment="Left" Height="45" Margin="896,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
+        <TextBlock x:Name="textBlock2_Copy15" HorizontalAlignment="Left" Height="45" Margin="902,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
         <TextBlock x:Name="textBlock2_Copy16" HorizontalAlignment="Left" Height="46" Margin="896,257,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
         <TextBlock x:Name="textBlock2_Copy17" HorizontalAlignment="Left" Height="45" Margin="896,212,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
         <TextBlock x:Name="textBlock2_Copy18" HorizontalAlignment="Left" Height="51" Margin="896,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>

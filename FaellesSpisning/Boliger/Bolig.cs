@@ -8,16 +8,15 @@ using System.Threading.Tasks;
 
 namespace FaellesSpisning.Boliger
 {
-    class Bolig : ObservableCollection<Person>
+    class Bolig
     {
-        public Bolig() : base()
+        public Bolig()
         {
-            this.Add(new Person() { navn = "John Jonson", alder = 35, bolignr = 71, aldersgrænse = "Voksen"});
 
         }
 
 
-        
+
 
     }
 }

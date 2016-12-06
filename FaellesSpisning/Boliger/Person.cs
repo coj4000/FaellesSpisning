@@ -13,7 +13,13 @@ namespace FaellesSpisning.Boliger
         public int bolignr { get; set; }
         public string aldersgrænse { get; set; }
 
-
+        public Person(string navn, int alder, int bolignr)
+        {
+            this.navn = navn;
+            this.alder = alder;
+            this.bolignr = bolignr;
+            this.aldersgrænse = Aldersgrænse(alder);
+        }
 
         private string Aldersgrænse(int alder)
         {

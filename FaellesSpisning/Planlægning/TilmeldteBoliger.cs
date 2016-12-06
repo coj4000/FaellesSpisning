@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FaellesSpisning.Boliger
+namespace FaellesSpisning.Planlægning
 {
-    class BoligListe
+    class TilmeldteBoliger
     {
-        public BoligListe()
-        {
-            
-        }
     }
 }

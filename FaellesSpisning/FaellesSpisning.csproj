@@ -103,8 +103,8 @@
     </Compile>
     <Compile Include="Matematik\Regning.cs" />
     <Compile Include="Planlægning\Arbejde.cs" />
-    <Compile Include="Planlægning\Liste.cs" />
     <Compile Include="Planlægning\Skema.cs" />
+    <Compile Include="Planlægning\TilmeldListe.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\AddBeboerCommand.cs" />
   </ItemGroup>

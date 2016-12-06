@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace FaellesSpisning.Planlægning
 {
-    class Liste
+    class TilmeldListe
     {
+
     }
 }

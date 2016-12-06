@@ -22,7 +22,7 @@
         <TextBlock x:Name="textBlock2_Copy1" HorizontalAlignment="Left" Height="117" Margin="200,350,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
         <TextBlock x:Name="textBlock2_Copy2" HorizontalAlignment="Left" Height="117" Margin="200,467,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
         <TextBlock x:Name="textBlock2_Copy3" HorizontalAlignment="Left" Height="117" Margin="370,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
-        <TextBlock x:Name="textBlock2_Copy4" HorizontalAlignment="Left" Height="117" Margin="370,467,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
+        <TextBlock x:Name="textBlock2_Copy4" HorizontalAlignment="Left" Height="117" Margin="370,467,0,0" TextWrapping="Wrap"  Text="" VerticalAlignment="Top" Width="170"/>
         <TextBlock x:Name="textBlock2_Copy5" HorizontalAlignment="Left" Height="117" Margin="370,350,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
         <TextBlock x:Name="textBlock2_Copy6" HorizontalAlignment="Left" Height="117" Margin="370,233,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
         <TextBlock x:Name="textBlock2_Copy7" HorizontalAlignment="Left" Height="117" Margin="540,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
@@ -35,7 +35,7 @@
         <TextBlock x:Name="textBlock2_Copy14" HorizontalAlignment="Left" Height="117" Margin="710,233,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
         <TextBlock x:Name="textBlock2_Copy15" HorizontalAlignment="Left" Height="117" Margin="880,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
         <TextBlock x:Name="textBlock2_Copy16" HorizontalAlignment="Left" Height="117" Margin="880,467,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
-        <TextBlock x:Name="textBlock2_Copy17" HorizontalAlignment="Left" Height="116" Margin="896,365,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
+        <TextBlock x:Name="textBlock2_Copy17" HorizontalAlignment="Left" Height="117" Margin="885,350,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
         <TextBlock x:Name="textBlock2_Copy18" HorizontalAlignment="Left" Height="117" Margin="880,233,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170"/>
         <ListView x:Name="listView" HorizontalAlignment="Left" Height="544" Margin="1083,40,0,0" VerticalAlignment="Top" Width="324"/>
         <TextBox x:Name="Navn" HorizontalAlignment="Left" Height="73" Margin="194,756,0,0" TextWrapping="Wrap" Text="Navn" VerticalAlignment="Top" Width="175"/>

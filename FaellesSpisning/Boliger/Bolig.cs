@@ -10,9 +10,10 @@ namespace FaellesSpisning.Boliger
 {
     class Bolig
     {
-        public Bolig()
+        public int bolignr { get; set; }
+        public Bolig(int bolignr)
         {
-
+            this.bolignr = bolignr;
         }
 
 

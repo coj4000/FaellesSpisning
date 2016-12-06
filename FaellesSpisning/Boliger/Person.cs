@@ -10,14 +10,12 @@ namespace FaellesSpisning.Boliger
     {
         public string navn { get; set; }
         public int alder { get; set; }
-        public int bolignr { get; set; }
         public string aldersgrænse { get; set; }
 
-        public Person(string navn, int alder, int bolignr)
+        public Person(string navn, int alder)
         {
             this.navn = navn;
             this.alder = alder;
-            this.bolignr = bolignr;
             this.aldersgrænse = Aldersgrænse(alder);
         }
 
@@ -54,10 +52,6 @@ namespace FaellesSpisning.Boliger
 
         }
 
-        public override string ToString()
-        {
-            return navn + " " + alder + " " + aldersgrænse;
-        }
 
     }
 }

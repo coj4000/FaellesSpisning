@@ -8,9 +8,17 @@ namespace FaellesSpisning.Planlægning
 {
     class TilmeldteBoliger
     {
-        public TilmeldteBoliger()
+        public string bolignavn;
+        public int børnu3;
+        public int børn;
+        public int unge;
+        public int voksne;
+        public double hus1 { get; set; }
+        public double hus2 { get; set; }
+        public TilmeldteBoliger(int børnu3, int børn, int unge, int voksne, string bolignavn)
         {
-
+            AntalKuverter(børnu3, børn, unge, voksne);
+            this.bolignavn = bolignavn;
         }
     
         public double AntalBørn(int antal)
@@ -37,7 +45,7 @@ namespace FaellesSpisning.Planlægning
             return result;
         }
 
-        public double AntalKuverter(int Børn, int BørnU3, int Unge, int Voksne)
+        public double AntalKuverter(int BørnU3, int Børn, int Unge, int Voksne)
         {
             double Kuverter = AntalBørnU3(BørnU3);
             Kuverter += AntalBørn(Børn);

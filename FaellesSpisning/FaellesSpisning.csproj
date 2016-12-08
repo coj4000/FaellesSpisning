@@ -102,6 +102,7 @@
     <Compile Include="Planlægning\Arbejde.cs" />
     <Compile Include="Planlægning\Dag.cs" />
     <Compile Include="Planlægning\Menu.cs" />
+    <Compile Include="Planlægning\OpretUge.cs" />
     <Compile Include="Planlægning\Skema.cs" />
     <Compile Include="Planlægning\TilmeldListe.cs" />
     <Compile Include="Planlægning\TilmeldteBoliger.cs" />

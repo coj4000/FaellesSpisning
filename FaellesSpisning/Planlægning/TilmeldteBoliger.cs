@@ -13,12 +13,11 @@ namespace FaellesSpisning.Planlægning
         public int børn;
         public int unge;
         public int voksne;
-        public double hus1 { get; set; }
-        public double hus2 { get; set; }
-        public TilmeldteBoliger(int børnu3, int børn, int unge, int voksne, string bolignavn)
+      
+        public TilmeldteBoliger()
         {
-            AntalKuverter(børnu3, børn, unge, voksne);
-            this.bolignavn = bolignavn;
+           
+          
         }
     
         public double AntalBørn(int antal)
@@ -54,6 +53,58 @@ namespace FaellesSpisning.Planlægning
             return Kuverter;
         }
 
-        
+        public double Bolig1()
+        {
+            bolignavn = "Bolig 1";
+            return AntalKuverter(1, 0, 1, 2);
+        }
+        public double Bolig2()
+        {
+            bolignavn = "Bolig 2";
+            return AntalKuverter(0, 2, 0, 2);
+        }
+        public double Bolig3()
+        {
+            bolignavn = "Bolig 3";
+            return AntalKuverter(0, 1, 1, 1);
+        }
+        public double Bolig4()
+        {
+            bolignavn = "Bolig 4";
+            return AntalKuverter(2, 1, 0, 2);
+        }
+        public double Bolig5()
+        {
+            bolignavn = "Bolig 5";
+            return AntalKuverter(0, 0, 1, 3);
+        }
+        public double Bolig6()
+        {
+            bolignavn = "Bolig 6";
+            return AntalKuverter(1, 9, 0, 5);
+        }
+        public double Bolig7()
+        {
+            bolignavn = "Bolig 7";
+            return AntalKuverter(3, 0, 0, 2);
+        }
+        public double Bolig8()
+        {
+            bolignavn = "Bolig 8";
+            return AntalKuverter(0, 0, 1, 4);
+        }
+        public double Bolig9()
+        {
+            bolignavn = "Bolig 9";
+            return AntalKuverter(0, 3, 0, 1);
+        }
+        public double Bolig10()
+        {
+            bolignavn = "Bolig 10";
+            return AntalKuverter(1, 1, 1, 3);
+        }
+
+
+
     }
 }

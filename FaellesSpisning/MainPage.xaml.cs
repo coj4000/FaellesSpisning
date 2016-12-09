@@ -27,9 +27,10 @@ namespace FaellesSpisning
             this.InitializeComponent();
         }
 
-        private void button_Copy1_Click(object sender, RoutedEventArgs e)
-        {
 
+        private void Buttonredirect_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Udregning), null);
         }
     }
 }

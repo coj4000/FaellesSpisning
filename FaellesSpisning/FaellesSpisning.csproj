@@ -112,6 +112,8 @@
     </Compile>
     <Compile Include="ViewModel\AddBeboerCommand.cs" />
     <Compile Include="ViewModel\AddRetCommand.cs" />
+    <Compile Include="ViewModel\FSViewModel.cs" />
+    <Compile Include="ViewModel\PlanViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">

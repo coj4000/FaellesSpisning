@@ -8,13 +8,23 @@ using System.Threading.Tasks;
 
 namespace FaellesSpisning.Boliger
 {
-    class Bolig
+   public class Bolig
     {
+        public int BørnU3 { get; set; }
+        public int Børn { get; set; }
+        public int Unge { get; set; }
+        public int Voksne { get; set; }
         public int bolignr { get; set; }
-        public Bolig(int bolignr)
+        //public Bolig(int bolignr)
+        //{
+        //    this.bolignr = bolignr;
+        //}
+
+        public override string ToString()
         {
-            this.bolignr = bolignr;
+            return "Bolig Nr: " + bolignr + " Bu3: " + BørnU3 + " B: " + Børn + " U: " + Unge + " V: " + Voksne;
         }
+
 
 
 

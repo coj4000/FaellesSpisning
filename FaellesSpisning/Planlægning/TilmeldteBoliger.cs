@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FaellesSpisning.Planlægning
 {
-    class TilmeldteBoliger
+    class TilmeldteBoliger 
     {
         public string bolignavn;
         public int børnu3;

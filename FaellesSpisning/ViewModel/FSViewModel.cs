@@ -11,8 +11,10 @@ namespace FaellesSpisning.ViewModel
       class FSViewModel : INotifyPropertyChanged
     {
         public Planlægning.TilmeldListe TilmeldListe { get; set; }
+        public Skema Skema { get; set; }
 
         private Boliger.Bolig SelectedBolig;
+        private Dag SelectedDag;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -27,6 +29,7 @@ namespace FaellesSpisning.ViewModel
         public FSViewModel()
         {
             TilmeldListe = new Planlægning.TilmeldListe();
+            Skema = new Skema();
             
         }
     }

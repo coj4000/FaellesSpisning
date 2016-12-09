@@ -107,6 +107,9 @@
     <Compile Include="Planlægning\TilmeldListe.cs" />
     <Compile Include="Planlægning\TilmeldteBoliger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Udregning.xaml.cs">
+      <DependentUpon>Udregning.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\AddBeboerCommand.cs" />
     <Compile Include="ViewModel\AddRetCommand.cs" />
   </ItemGroup>

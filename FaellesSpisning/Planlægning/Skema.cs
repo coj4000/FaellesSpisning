@@ -12,11 +12,11 @@ namespace FaellesSpisning.Planlægning
     {
         public Skema() : base()
         {
-            this.Add(new Dag() {Dage = "Mandag", Nummer = 1, Ret = "", ChefKok = "", Kok = "", Opryder = ""});
-            this.Add(new Dag() {Dage = "Tirsdag", Nummer = 2, Ret = "", ChefKok = "", Kok = "", Opryder = ""});
-            this.Add(new Dag() {Dage = "Onsdag", Nummer = 3, Ret = "", ChefKok = "", Kok = "", Opryder = ""});
-            this.Add(new Dag() {Dage = "Torsdag", Nummer = 4, Ret = "", ChefKok = "", Kok = "", Opryder = ""});
-            this.Add(new Dag() {Dage = "Fredag", Nummer = 5, Ret = "", ChefKok = "", Kok = "", Opryder = ""});
+            this.Add(new Dag() {Dage = "Mandag", Nummer = 1, Ret = "", ChefKok = "", Kok = "", Opryder = "", Pris = 0});
+            this.Add(new Dag() {Dage = "Tirsdag", Nummer = 2, Ret = "", ChefKok = "", Kok = "", Opryder = "", Pris = 0});
+            this.Add(new Dag() {Dage = "Onsdag", Nummer = 3, Ret = "", ChefKok = "", Kok = "", Opryder = "", Pris = 0});
+            this.Add(new Dag() {Dage = "Torsdag", Nummer = 4, Ret = "", ChefKok = "", Kok = "", Opryder = "", Pris = 0});
+            this.Add(new Dag() {Dage = "Fredag", Nummer = 5, Ret = "", ChefKok = "", Kok = "", Opryder = "", Pris = 0});
         }
 
         public void Add()
@@ -34,6 +34,19 @@ namespace FaellesSpisning.Planlægning
             return json;
         }
 
+        public void TotalPris(double pris)
+        {
+           
+        }
+
+        public void SamletPris(double pris)
+        {
+            foreach (Dag skema in Items)
+            {
+                
+            }
+        }
+       
 
 
 

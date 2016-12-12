@@ -13,9 +13,9 @@ namespace FaellesSpisning.Planlægning
     {
         public TilmeldListe() : base()
         {
-            this.Add(new Bolig() {bolignr = 1, BørnU3 = 1, Børn = 0, Unge = 2, Voksne = 2 });
-            this.Add(new Bolig() {bolignr = 2, BørnU3 = 0, Børn = 3, Unge = 0, Voksne = 2 });
-            this.Add(new Bolig() {bolignr = 3, BørnU3 = 0, Børn = 1, Unge = 1, Voksne = 3 });
+            this.Add(new Bolig() { bolignr = 1, BørnU3 = 1, Børn = 0, Unge = 2, Voksne = 2 });
+            this.Add(new Bolig() { bolignr = 2, BørnU3 = 0, Børn = 3, Unge = 0, Voksne = 2 });
+            this.Add(new Bolig() { bolignr = 3, BørnU3 = 0, Børn = 1, Unge = 1, Voksne = 3 });
             this.Add(new Bolig() { bolignr = 4, BørnU3 = 1, Børn = 0, Unge = 2, Voksne = 2 });
             this.Add(new Bolig() { bolignr = 5, BørnU3 = 0, Børn = 1, Unge = 1, Voksne = 2 });
             this.Add(new Bolig() { bolignr = 6, BørnU3 = 0, Børn = 2, Unge = 0, Voksne = 1 });
@@ -41,9 +41,6 @@ namespace FaellesSpisning.Planlægning
                 this.Add(bolig);
             }
         }
-
-
-
 
 
         //    private TilmeldteBoliger bolig = new TilmeldteBoliger();

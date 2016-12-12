@@ -15,6 +15,7 @@ namespace FaellesSpisning.Planlægning
         public string ChefKok { get; set; }
         public string Kok { get; set; }
         public string Opryder { get; set; }
+        public double Pris { get; set; }
 
         public override string ToString()
         {

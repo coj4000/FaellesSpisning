@@ -38,7 +38,11 @@ namespace FaellesSpisning
 
         private void Rediger_OnClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(UpdateDag), null);
+            if (listView1.SelectedItem == null)
+            {
+                
+            }
+            this.Frame.Navigate(typeof(UpdateDag), listView1.SelectedItems);
         }
     }
 }

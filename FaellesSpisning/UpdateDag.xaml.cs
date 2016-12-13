@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using FaellesSpisning.Planlægning;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -30,6 +31,13 @@ namespace FaellesSpisning
         private void Buttoncancle_OnClick(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainPage), null);
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+
+           DagNavn.Text = e.Content.ToString();
+
         }
     }
 }

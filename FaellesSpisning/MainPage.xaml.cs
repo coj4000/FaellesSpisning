@@ -26,6 +26,8 @@ namespace FaellesSpisning
         public MainPage()
         {
             this.InitializeComponent();
+
+
         }
 
 
@@ -34,15 +36,21 @@ namespace FaellesSpisning
             this.Frame.Navigate(typeof(Udregning), null);
         }
 
-      
+
 
         private void Rediger_OnClick(object sender, RoutedEventArgs e)
         {
+
             if (listView1.SelectedItem == null)
             {
-                
+
+                this.Frame.Navigate(typeof(MainPage), null);
             }
-            this.Frame.Navigate(typeof(UpdateDag), listView1.SelectedItems);
+            else
+            {
+                this.Frame.Navigate(typeof(UpdateDag), listView1.SelectedItems);
+            }
+
         }
     }
 }

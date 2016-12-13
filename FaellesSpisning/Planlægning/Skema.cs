@@ -41,10 +41,6 @@ namespace FaellesSpisning.Planlægning
 
         public void SamletPris(double pris)
         {
-            foreach (Dag skema in Items)
-            {
-                
-            }
         }
        
 

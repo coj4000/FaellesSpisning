@@ -12,33 +12,24 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using FaellesSpisning.Planlægning;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace FaellesSpisning
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class UpdateDag : Page
     {
-        public MainPage()
+        public UpdateDag()
         {
             this.InitializeComponent();
         }
 
-
-        private void Buttonredirect_OnClick(object sender, RoutedEventArgs e)
+        private void Buttoncancle_OnClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Udregning), null);
-        }
-
-      
-
-        private void Rediger_OnClick(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(UpdateDag), null);
+            this.Frame.Navigate(typeof(MainPage), null);
         }
     }
 }

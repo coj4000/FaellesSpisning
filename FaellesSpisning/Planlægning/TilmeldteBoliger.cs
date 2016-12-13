@@ -16,7 +16,6 @@ namespace FaellesSpisning.Planlægning
         {
           
         }
-    
         
         
     }

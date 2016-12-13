@@ -110,6 +110,9 @@
     <Compile Include="Udregning.xaml.cs">
       <DependentUpon>Udregning.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UpdateDag.xaml.cs">
+      <DependentUpon>UpdateDag.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\AddBeboerCommand.cs" />
     <Compile Include="ViewModel\AddRetCommand.cs" />
     <Compile Include="ViewModel\FSViewModel.cs" />
@@ -141,6 +144,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Udregning.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UpdateDag.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

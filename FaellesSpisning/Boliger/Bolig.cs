@@ -5,6 +5,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.Media.FaceAnalysis;
 
 namespace FaellesSpisning.Boliger
 {
@@ -16,14 +17,16 @@ namespace FaellesSpisning.Boliger
        public double Voksne;
        public int bolignr;
        public double PrisPerDag;
+       public double AntalKuverterIAlt;
+       public bool mandag;
+       public bool tirsdag;
+       public bool onsdag;
+       public bool Torsdag;
+       public bool Fredag;
         //public Bolig(int bolignr)
         //{
         //    this.bolignr = bolignr;
         //}
-        public double GetAntalKuverterIHusstand()
-        {
-            return AntalBørnU3() + AntalBørn() + AntalUnge() + AntalVoksne();
-        }
         
 
        public double AntalKuverter()
@@ -52,6 +55,15 @@ namespace FaellesSpisning.Boliger
             double result = Voksne * 1;
             return result;
         }
+
+       public double PrisPerKuvert()
+       {
+           return PrisPerDag/AntalKuverterIAlt;
+       }
+       public double PrisPerBolig()
+       {
+           return PrisPerDag * AntalKuverter();
+       }
 
         public int AntalVoksneIHusstand { get; set; }
         public int AntalTeenagerIHusstand { get; set; }

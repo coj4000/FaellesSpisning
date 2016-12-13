@@ -32,5 +32,7 @@ namespace FaellesSpisning.ViewModel
             Skema = new Skema();
             
         }
+
+        public ViewModel.ViewModelSingleton VMSingleton { get; set; } = ViewModel.ViewModelSingleton.Instance;
     }
 }

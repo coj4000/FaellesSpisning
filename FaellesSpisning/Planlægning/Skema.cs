@@ -34,13 +34,10 @@ namespace FaellesSpisning.Planlægning
             return json;
         }
 
-        public void TotalPris(double pris)
+        public double TotalPris()
         {
-           
-        }
-
-        public void SamletPris(double pris)
-        {
+            double pris = 0;
+            return pris;
         }
        
 

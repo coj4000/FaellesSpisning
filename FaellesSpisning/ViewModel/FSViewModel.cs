@@ -13,8 +13,9 @@ namespace FaellesSpisning.ViewModel
         public Planlægning.TilmeldListe TilmeldListe { get; set; }
         public Skema Skema { get; set; }
 
-       public ViewModelSingleton ViewSingleton { get; }
-        
+       public ViewModelSingleton ViewSingleton { get { return ViewModelSingleton.Instance; } }
+       
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected virtual void OnPropertyChanged(string propertyName)

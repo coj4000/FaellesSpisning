@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 
 namespace FaellesSpisning.Planlægning
 {
-    class Dag
+    public class Dag
     {
         public string Dage { get; set; }
         public int Nummer  { get; set; }

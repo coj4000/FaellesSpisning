@@ -24,6 +24,6 @@ namespace FaellesSpisning.ViewModel
             }
         }
         public Boliger.Bolig SelectedBolig { get; set; }
-        private Dag SelectedDag { get; set; }
+        public Dag SelectedDag { get; set; }
     }
 }

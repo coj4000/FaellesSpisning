@@ -18,6 +18,7 @@ namespace FaellesSpisning.Boliger
        public int bolignr;
        public double PrisPerDag;
        public double AntalKuverterIAlt;
+       public double samletpris;
        public bool mandag;
        public bool tirsdag;
        public bool onsdag;
@@ -55,20 +56,22 @@ namespace FaellesSpisning.Boliger
             double result = Voksne * 1;
             return result;
         }
-
-       public double PrisPerKuvert()
+        
+       public double GennemsnitsKuvertspris()
        {
-           return PrisPerDag/AntalKuverterIAlt;
-       }
-       public double PrisPerBolig()
-       {
-           return PrisPerDag * AntalKuverter();
+           return samletpris/AntalKuverterIAlt;
        }
 
-        public int AntalVoksneIHusstand { get; set; }
-        public int AntalTeenagerIHusstand { get; set; }
-        public int AntalBarnIHusstand { get; set; }
-        public int AntalBabyIHusstand { get; set; }
+       public double SamletPrisPerBolig()
+       {
+           return AntalKuverter()*GennemsnitsKuvertspris();
+       }
+        
+
+        public int AntalVoksneIBolig { get; set; }
+        public int AntalTeenagerIBolig { get; set; }
+        public int AntalBarnIBolig { get; set; }
+        public int AntalBabyIBolig { get; set; }
         public string HusNummer { get; set; }
 
 

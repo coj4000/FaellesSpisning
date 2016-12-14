@@ -48,7 +48,7 @@ namespace FaellesSpisning
             }
             else
             {
-                this.Frame.Navigate(typeof(UpdateDag), listView1.SelectedItems);
+                this.Frame.Navigate(typeof(UpdateDag), listView1.SelectedItem);
             }
 
         }

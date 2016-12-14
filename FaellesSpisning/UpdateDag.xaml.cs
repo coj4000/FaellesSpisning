@@ -35,8 +35,8 @@ namespace FaellesSpisning
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-
-           DagNavn.Text = e.Content.ToString();
+            var temp = e.Parameter as Dag;
+            DagNavn.Text = temp.Dage;
 
         }
     }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FaellesSpisning.Planlægning;
 
 namespace FaellesSpisning.ViewModel
 {
@@ -22,5 +23,7 @@ namespace FaellesSpisning.ViewModel
                 return instance;
             }
         }
+        public Boliger.Bolig SelectedBolig { get; set; }
+        private Dag SelectedDag { get; set; }
     }
 }

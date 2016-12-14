@@ -13,9 +13,8 @@ namespace FaellesSpisning.ViewModel
         public Planlægning.TilmeldListe TilmeldListe { get; set; }
         public Skema Skema { get; set; }
 
-        private Boliger.Bolig SelectedBolig;
-        private Dag SelectedDag;
-
+       public ViewModelSingleton ViewSingleton { get; }
+        
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected virtual void OnPropertyChanged(string propertyName)

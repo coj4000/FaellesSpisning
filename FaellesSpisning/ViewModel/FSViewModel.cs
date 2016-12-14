@@ -10,8 +10,8 @@ namespace FaellesSpisning.ViewModel
 {
       class FSViewModel : INotifyPropertyChanged
     {
-        public Planlægning.TilmeldListe TilmeldListe { get; set; }
-        public Skema Skema { get; set; }
+        
+       
 
        public ViewModelSingleton ViewSingleton { get { return ViewModelSingleton.Instance; } }
        
@@ -28,8 +28,8 @@ namespace FaellesSpisning.ViewModel
 
         public FSViewModel()
         {
-            TilmeldListe = new Planlægning.TilmeldListe();
-            Skema = new Skema();
+            ViewSingleton.TilmeldListe = new Planlægning.TilmeldListe();
+            ViewSingleton.Skema = new Skema();
             
         }
 

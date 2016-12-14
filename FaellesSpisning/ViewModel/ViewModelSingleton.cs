@@ -25,5 +25,9 @@ namespace FaellesSpisning.ViewModel
         }
         public Boliger.Bolig SelectedBolig { get; set; }
         public Dag SelectedDag { get; set; }
+
+        public TilmeldListe TilmeldListe { get; set; }
+        public Skema Skema { get; set; }
+
     }
 }

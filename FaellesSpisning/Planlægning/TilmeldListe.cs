@@ -9,7 +9,7 @@ using Newtonsoft.Json;
 
 namespace FaellesSpisning.Planlægning
 {
-    class TilmeldListe : ObservableCollection<Bolig>
+    public class TilmeldListe : ObservableCollection<Bolig>
     {
         public TilmeldListe() : base()
         {

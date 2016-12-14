@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 
 namespace FaellesSpisning.Planlægning
 {
-    class Skema : ObservableCollection<Dag>
+   public class Skema : ObservableCollection<Dag>
     {
         public Skema() : base()
         {

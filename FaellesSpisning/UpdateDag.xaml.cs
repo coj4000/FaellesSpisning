@@ -39,5 +39,10 @@ namespace FaellesSpisning
             DagNavn.Text = temp.Dage;
 
         }
+
+        private void Button_OnClick(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

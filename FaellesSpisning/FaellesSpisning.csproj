@@ -114,9 +114,9 @@
       <DependentUpon>UpdateDag.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\AddBeboerCommand.cs" />
-    <Compile Include="ViewModel\AddRetCommand.cs" />
     <Compile Include="ViewModel\FSViewModel.cs" />
     <Compile Include="ViewModel\PlanViewModel.cs" />
+    <Compile Include="ViewModel\RedigerDagCommand.cs" />
     <Compile Include="ViewModel\TilmeldListeSingleton.cs" />
     <Compile Include="ViewModel\ViewModelSingleton.cs" />
   </ItemGroup>

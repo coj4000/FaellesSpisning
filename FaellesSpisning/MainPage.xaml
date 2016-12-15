@@ -9,7 +9,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <ListView x:Name="listView" HorizontalAlignment="Left" Height="333" Margin="732,40,0,0" VerticalAlignment="Top" Width="265" ItemsSource="{Binding ViewSingleton.TilmeldListe}">
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="387" Margin="732,40,0,0" VerticalAlignment="Top" Width="265" ItemsSource="{Binding ViewSingleton.TilmeldListe}">
             <ListView.DataContext>
                 <ViewModel:FSViewModel/>
             </ListView.DataContext>

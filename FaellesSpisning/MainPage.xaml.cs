@@ -33,7 +33,7 @@ namespace FaellesSpisning
 
         private void Buttonredirect_OnClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Udregning), null);
+            this.Frame.Navigate(typeof(Udregning), listView.SelectedItem);
         }
 
 
@@ -48,7 +48,7 @@ namespace FaellesSpisning
             }
             else
             {
-                this.Frame.Navigate(typeof(UpdateDag), listView1.SelectedItem);
+                //this.Frame.Navigate(typeof(UpdateDag), listView1.SelectedItem);
             }
 
         }

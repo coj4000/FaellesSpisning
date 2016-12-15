@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Windows.Devices.Printers;
 using FaellesSpisning.Planlægning;
 
 namespace FaellesSpisning.ViewModel
@@ -30,21 +29,9 @@ namespace FaellesSpisning.ViewModel
         public Dag SelectedDag { get; set; }
 
         public TilmeldListe TilmeldListe { get; set; }
-        public Skema Skema { get; set; }
+        public Planlægning.Skema Skema { get; set; }
+      
 
-        public void Boligindhold()
-        {
-            foreach (var Hus in Skema)
-            {
-                    
-            }
-        }
-        public double Boligudregning()
-        {
-            double pris;
-            return pris;
-
-        }
-
+        
     }
 }

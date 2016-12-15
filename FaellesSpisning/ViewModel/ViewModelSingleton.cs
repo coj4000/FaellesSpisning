@@ -10,7 +10,7 @@ namespace FaellesSpisning.ViewModel
     public class ViewModelSingleton
     {
         private static ViewModelSingleton instance;
-        private ViewModelSingleton() { }
+        private ViewModelSingleton() {Planlægning.Skema skema = new Skema(); }
 
         public static ViewModelSingleton Instance
         {
@@ -23,6 +23,8 @@ namespace FaellesSpisning.ViewModel
                 return instance;
             }
         }
+
+
         public Boliger.Bolig SelectedBolig { get; set; }
         public Dag SelectedDag { get; set; }
 

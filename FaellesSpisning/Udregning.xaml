@@ -8,7 +8,9 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="button" Content="Tilbage til Forside" HorizontalAlignment="Left" Margin="321,419,0,0" VerticalAlignment="Top" Height="44" Width="140" Click="button_Click"/>
+        <Button x:Name="button" Content="Tilbage til Forside" HorizontalAlignment="Left" Margin="267,491,0,0" VerticalAlignment="Top" Height="44" Width="140" Click="button_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="295,201,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="51" Width="95"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="295,201,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="51" Width="95"/>
 
     </Grid>
 </Page>

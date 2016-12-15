@@ -7,13 +7,15 @@
     xmlns:ViewModel="using:FaellesSpisning.ViewModel"
     x:Class="FaellesSpisning.MainPage"
     mc:Ignorable="d">
-
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <ListView x:Name="listView" HorizontalAlignment="Left" Height="387" Margin="732,40,0,0" VerticalAlignment="Top" Width="265" ItemsSource="{Binding ViewSingleton.TilmeldListe}">
-            <ListView.DataContext>
+    <Page.DataContext>
                 <ViewModel:FSViewModel/>
-            </ListView.DataContext>
-        </ListView>
+    </Page.DataContext>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.DataContext>
+            <ViewModel:FSViewModel/>
+        </Grid.DataContext>
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="387" Margin="732,40,0,0" VerticalAlignment="Top" Width="265" ItemsSource="{Binding ViewSingleton.TilmeldListe}"/>
+           
         <Button x:Name="Tilføj" Content="Tilføj" HorizontalAlignment="Left" Height="45" Margin="576,507,0,0" VerticalAlignment="Top" Width="108"/>
         <Button x:Name="Rediger" Content="Rediger" HorizontalAlignment="Left" Height="45" Margin="576,446,0,0" VerticalAlignment="Top" Width="108" Click="Rediger_OnClick"/>
         <TextBox x:Name="Stilling_Copy" HorizontalAlignment="Left" Height="45" Margin="830,446,0,0" TextWrapping="Wrap" Text="Bolig" VerticalAlignment="Top" Width="90"/>
@@ -22,15 +24,14 @@
         <Button x:Name="Tilføj_Copy" Content="Tilføj" HorizontalAlignment="Left" Height="45" Margin="920,446,0,0" VerticalAlignment="Top" Width="77"/>
         <Button x:Name="Tilføj_Copy1" Content="Hent" HorizontalAlignment="Left" Height="45" Margin="920,507,0,0" VerticalAlignment="Top" Width="77"/>
         <Button x:Name="buttonredirect" Content="Beregning" HorizontalAlignment="Left" Margin="34,280,0,0" VerticalAlignment="Top" Click="Buttonredirect_OnClick" Height="59" Width="106"/>
-        <ListView x:Name="listView1" HorizontalAlignment="Left" Height="235" Margin="34,40,0,0" VerticalAlignment="Top" Width="524" ItemsSource="{Binding ViewSingleton.Skema}" SelectedItem="{Binding SelectedDag, Mode=TwoWay}">
-            <ListView.DataContext>
-                <ViewModel:FSViewModel/>
-            </ListView.DataContext>
-        </ListView>
-        <TextBox x:Name="TextBox" HorizontalAlignment="Left" Margin="34,446,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="45" Width="89" PlaceholderText="Ret"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="168,446,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="45" Width="89" PlaceholderText="Chef Kok"/>
-        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="305,446,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="45" Width="89" PlaceholderText="Kok"/>
-        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Margin="439,446,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="45" Width="89" PlaceholderText="Opryderer"/>
+        <ListView x:Name="listView1"  HorizontalAlignment="Left" Height="235" Margin="34,40,0,0" VerticalAlignment="Top" Width="524" ItemsSource="{Binding Skema}" SelectedItem="{Binding SelectedDag, Mode=TwoWay}"/>
+           
+        <TextBox x:Name="TextBox" HorizontalAlignment="Left" Margin="34,446,0,0" TextWrapping="Wrap" Text="{Binding SelectedDag.Ret, Mode=TwoWay}" VerticalAlignment="Top" Height="45" Width="89" PlaceholderText="Ret"/>
+
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="168,446,0,0" TextWrapping="Wrap" Text="{Binding SelectedDag.ChefKok, Mode=TwoWay}" VerticalAlignment="Top" Height="45" Width="89" PlaceholderText="Chef Kok"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="305,446,0,0" TextWrapping="Wrap" Text="{Binding SelectedDag.Kok, Mode=TwoWay}" VerticalAlignment="Top" Height="45" Width="89" PlaceholderText="Kok"/>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Margin="439,446,0,0" TextWrapping="Wrap" Text="{Binding SelectedDag.Opryder, Mode=TwoWay}" VerticalAlignment="Top" Height="45" Width="89" PlaceholderText="Opryderer"/>
         <TextBox x:Name="textBox4" HorizontalAlignment="Left" Margin="168,507,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="45" Width="226" PlaceholderText="Pris"/>
     </Grid>
+    
 </Page>

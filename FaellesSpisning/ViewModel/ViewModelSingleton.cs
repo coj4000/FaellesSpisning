@@ -29,7 +29,7 @@ namespace FaellesSpisning.ViewModel
     
 
         public TilmeldListe TilmeldListe { get; set; }
-        public Planlægning.Skema Skema { get; set; }
+        
       
 
         

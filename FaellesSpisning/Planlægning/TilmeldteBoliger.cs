@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.Devices.Bluetooth.Advertisement;
 using FaellesSpisning.Boliger;
+using FaellesSpisning.ViewModel;
 using Newtonsoft.Json;
 
 namespace FaellesSpisning.Planlægning

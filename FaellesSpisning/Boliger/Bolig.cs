@@ -68,12 +68,7 @@ namespace FaellesSpisning.Boliger
        }
         
 
-        public int AntalVoksneIBolig { get; set; }
-        public int AntalTeenagerIBolig { get; set; }
-        public int AntalBarnIBolig { get; set; }
-        public int AntalBabyIBolig { get; set; }
-        public string HusNummer { get; set; }
-
+ 
 
 
 

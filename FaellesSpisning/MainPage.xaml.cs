@@ -33,7 +33,7 @@ namespace FaellesSpisning
 
         private void Buttonredirect_OnClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(), listView.SelectedItem);
+            this.Frame.Navigate(typeof(Udregn), listView.SelectedItem);
         }
 
 

@@ -9,11 +9,10 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock x:Name="DagNavn" HorizontalAlignment="Left" Margin="392,144,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="188"/>
-        <TextBox x:Name="Ret" HorizontalAlignment="Left" Margin="274,193,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="401"/>
-        <TextBox x:Name="Pris" HorizontalAlignment="Left" Margin="274,260,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="401"/>
-        <TextBox x:Name="Chefkok" HorizontalAlignment="Left" Margin="274,337,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="401"/>
-        <TextBox x:Name="Kok" HorizontalAlignment="Left" Margin="274,414,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="401"/>
-        <TextBox x:Name="Opryder" HorizontalAlignment="Left" Margin="274,486,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="401"/>
+        <TextBox x:Name="Ret" Header="Ret"  HorizontalAlignment="Left" Margin="274,193,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="401" PlaceholderText=""/>
+        <TextBox x:Name="Chefkok" Header ="Chefkok"  HorizontalAlignment="Left" Margin="276,295,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="401"/>
+        <TextBox x:Name="Kok" Header="Kok" HorizontalAlignment="Left" Margin="274,390,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="401"/>
+        <TextBox x:Name="Opryder" Header ="opryder"  HorizontalAlignment="Left" Margin="274,486,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="401"/>
         <Button x:Name="buttonannuler" Content="Annuler" HorizontalAlignment="Left" Margin="276,557,0,0" VerticalAlignment="Top" Click="Buttoncancle_OnClick"/>
         <Button x:Name="button_Copy" Content="Button" HorizontalAlignment="Left" Margin="609,557,0,0" VerticalAlignment="Top"/>
         <Button x:Name="button" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_OnClick"/>

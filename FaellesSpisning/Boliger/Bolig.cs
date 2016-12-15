@@ -37,7 +37,7 @@ namespace FaellesSpisning.Boliger
 
         public double AntalBørnU3()
         {
-            double result = BørnU3 * 0.0;
+            double result = BørnU3 * 0.00;
             return result;
         }
         public double AntalBørn()

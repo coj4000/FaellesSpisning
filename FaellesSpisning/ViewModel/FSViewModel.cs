@@ -14,7 +14,7 @@ namespace FaellesSpisning.ViewModel
        
 
        public ViewModelSingleton ViewSingleton { get { return ViewModelSingleton.Instance; } }
-       
+        public RedigerDagCommand RedigerDagCommand { get; set; }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -30,7 +30,17 @@ namespace FaellesSpisning.ViewModel
         {
             ViewSingleton.TilmeldListe = new Planlægning.TilmeldListe();
             ViewSingleton.Skema = new Skema();
+            RedigerDagCommand = new RedigerDagCommand(Rediger);
             
+        }
+
+        public void Rediger()
+        {
+            var dag = ViewSingleton.Skema.Where(d => d.Nummer == ViewSingleton.SelectedDag.Nummer).FirstOrDefault();
+            if (dag != null)
+            {
+                dag.Ret = 
+            }
         }
 
         public ViewModel.ViewModelSingleton VMSingleton { get; set; } = ViewModel.ViewModelSingleton.Instance;

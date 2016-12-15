@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Input;
 
 namespace FaellesSpisning.ViewModel
 {
-    class AddRetCommand : ICommand
+    public class RedigerDagCommand
     {
         private readonly Action execute;
 
         public event EventHandler CanExecuteChanged;
 
-        public AddRetCommand(Action execute)
+        public RedigerDagCommand(Action execute)
         {
             this.execute = execute;
         }
@@ -29,4 +28,3 @@ namespace FaellesSpisning.ViewModel
         }
     }
 }
-

@@ -29,7 +29,9 @@ namespace FaellesSpisning.ViewModel
         public Dag SelectedDag { get; set; }
 
         public TilmeldListe TilmeldListe { get; set; }
-        public Skema Skema { get; set; }
+        public Planlægning.Skema Skema { get; set; }
+      
 
+        
     }
 }

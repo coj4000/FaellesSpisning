@@ -19,15 +19,7 @@ namespace FaellesSpisning.Planlægning
             this.Add(new Dag() {Dage = "Fredag", Nummer = 5, Ret = "", ChefKok = "", Kok = "", Opryder = "", Pris = 0});
         }
 
-        public void Add()
-        {
-
-        }
-
-        public void Delete()
-        {
-
-        }
+       
         public string GetJson()
         {
             string json = JsonConvert.SerializeObject(this);

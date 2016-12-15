@@ -29,6 +29,7 @@ namespace FaellesSpisning.Boliger
         //    this.bolignr = bolignr;
         //}
         
+        
 
        public double AntalKuverter()
        {

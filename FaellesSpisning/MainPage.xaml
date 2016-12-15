@@ -22,7 +22,7 @@
         <Button x:Name="Tilføj_Copy" Content="Tilføj" HorizontalAlignment="Left" Height="45" Margin="920,446,0,0" VerticalAlignment="Top" Width="77"/>
         <Button x:Name="Tilføj_Copy1" Content="Hent" HorizontalAlignment="Left" Height="45" Margin="920,507,0,0" VerticalAlignment="Top" Width="77"/>
         <Button x:Name="buttonredirect" Content="Beregning" HorizontalAlignment="Left" Margin="34,280,0,0" VerticalAlignment="Top" Click="Buttonredirect_OnClick" Height="59" Width="106"/>
-        <ListView x:Name="listView1" HorizontalAlignment="Left" Height="235" Margin="34,40,0,0" VerticalAlignment="Top" Width="524" ItemsSource="{Binding ViewSingleton.Skema}">
+        <ListView x:Name="listView1" HorizontalAlignment="Left" Height="235" Margin="34,40,0,0" VerticalAlignment="Top" Width="524" ItemsSource="{Binding ViewSingleton.Skema}" SelectedItem="{Binding SelectedDag, Mode=TwoWay}">
             <ListView.DataContext>
                 <ViewModel:FSViewModel/>
             </ListView.DataContext>

@@ -24,7 +24,7 @@ namespace FaellesSpisning
     {
         public Udregning()
         {
-            this.InitializeComponent();
+            
         }
 
         private void button_Click(object sender, RoutedEventArgs e)

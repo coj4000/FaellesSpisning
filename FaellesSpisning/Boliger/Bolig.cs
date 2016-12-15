@@ -17,7 +17,7 @@ namespace FaellesSpisning.Boliger
        public double Voksne;
        public int bolignr;
        public double PrisPerDag;
-       public double AntalKuverterIAlt;
+       //public double AntalKuverterIAlt;
        public double samletpris;
        public bool mandag;
        public bool tirsdag;
@@ -59,7 +59,7 @@ namespace FaellesSpisning.Boliger
         
        public double GennemsnitsKuvertspris()
        {
-           return samletpris/AntalKuverterIAlt;
+           return samletpris/AntalKuverter();
        }
 
        public double SamletPrisPerBolig()

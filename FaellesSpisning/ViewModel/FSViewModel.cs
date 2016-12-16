@@ -19,6 +19,9 @@ namespace FaellesSpisning.ViewModel
         public Planlægning.Dag selectedDag;
         public Planlægning.Skema Skema { get; set; }
 
+        
+
+
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string propertyName)
         {
@@ -28,7 +31,11 @@ namespace FaellesSpisning.ViewModel
             }
         }
 
-        localFolder = ApplicationData.Current.LocalFolder;
+
+        StorageFolder localfolder = null;
+
+
+        
       
 
         public FSViewModel()
@@ -39,6 +46,9 @@ namespace FaellesSpisning.ViewModel
             SaveSkemaCommand = new SaveSkemaCommand(GemDataTilDiskAsync);
             HentDataCommand = new HentDataCommand(HentdataFraDiscAsync);
 
+            localfolder = ApplicationData.Current.LocalFolder;
+
+
         }
         public async void HentdataFraDiscAsync()
         {
@@ -46,7 +56,7 @@ namespace FaellesSpisning.ViewModel
             try
             {
                 this.Skema.Clear();
-                StorageFile file = await localFolder.GetFileAsync(filnavn);
+                StorageFile file = await localfolder.GetFileAsync(filnavn);
                 string jsonText = await FileIO.ReadTextAsync(file);
                 Skema.indsætJson(jsonText);
             }
@@ -61,14 +71,14 @@ namespace FaellesSpisning.ViewModel
         public async void GemDataTilDiskAsync()
         {
             string jsonText = this.Skema.GetJson();
-            StorageFile file = await localFolder.CreateFileAsync(filnavn, CreationCollisionOption.ReplaceExisting);
+            StorageFile file = await localfolder.CreateFileAsync(filnavn, CreationCollisionOption.ReplaceExisting);
             await FileIO.WriteTextAsync(file, jsonText);
         }
 
         public SaveSkemaCommand SaveSkemaCommand { get; set; }
         public HentDataCommand HentDataCommand { get; set; }
 
-        private StorageFolder localFolder = null;
+        
 
 
         public Planlægning.Dag SelectedDag

@@ -24,14 +24,16 @@ namespace FaellesSpisning.Boliger
        public bool onsdag;
        public bool Torsdag;
        public bool Fredag;
+       public int husKuverter;
+
         //public Bolig(int bolignr)
         //{
         //    this.bolignr = bolignr;
         //}
-        
-        
 
-       public double AntalKuverter()
+
+
+        public double AntalKuverter()
        {
            return AntalBørnU3() + AntalBørn() + AntalUnge() + AntalVoksne();
        }
@@ -79,6 +81,40 @@ namespace FaellesSpisning.Boliger
         }
 
 
+
+       // public Bolig(double BørnU3, double Børn, double Unge, double Voknse)
+       // {
+       //     this.BørnU3 = BørnU3;
+       //     this.Børn = Børn;
+       //     this.Unge = Unge;
+       //     this.Voksne = Voksne;
+       // }
+
+       //public double DeltagerSum()
+       //{
+       //    double result = 0;
+       //    result = result + BørnU3;
+       //    result = result + Børn;
+       //    result = result + Unge;
+       //    result = result + Voksne;
+       //    return result;
+
+       public double SumAfDeltagere()
+       {
+           double total = 0;
+           AntalKuverter();
+           total = total + AntalKuverter();
+           return total;
+       }
+
+       //}
+        public void totalKuvert(double husKurveter)
+       {
+           if (husKuverter < 0)
+            {
+                throw new ArgumentOutOfRangeException("memes");
+            }
+       }
 
 
 

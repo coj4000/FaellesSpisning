@@ -19,8 +19,8 @@ namespace FaellesSpisning.ViewModel
         public RedigerDagCommand RedigerDagCommand { get; set; }
         public Planlægning.Dag selectedDag;
         public Planlægning.Skema Skema { get; set; }
-
-        
+        // shiet til samletpris (no work)
+        public Planlægning.TilmeldteBoliger Samletpris { get; set; }
         
 
 
@@ -43,12 +43,17 @@ namespace FaellesSpisning.ViewModel
         public FSViewModel()
         {
             ViewSingleton.TilmeldListe = new Planlægning.TilmeldListe();
+
             Skema = new Skema();
 
             SaveSkemaCommand = new SaveSkemaCommand(GemDataTilDiskAsync);
+
             HentDataCommand = new HentDataCommand(HentdataFraDiscAsync);
+
             SavePrisCommand = new SavePrisCommand(GemPrisTilDiskAsync);
 
+            // added af matias til Samletpris (lul no work)
+            Samletpris = new Planlægning.TilmeldteBoliger();
             
 
             localfolder = ApplicationData.Current.LocalFolder;

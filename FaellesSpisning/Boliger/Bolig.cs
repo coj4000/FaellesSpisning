@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Collections.Specialized;
+using System.ComponentModel;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -9,7 +11,7 @@ using Windows.Media.FaceAnalysis;
 
 namespace FaellesSpisning.Boliger
 {
-   public class Bolig
+   public class Bolig : INotifyPropertyChanged
    {
        public double BørnU3;
        public double Børn;
@@ -25,6 +27,18 @@ namespace FaellesSpisning.Boliger
        public bool Torsdag;
        public bool Fredag;
        public int husKuverter;
+
+        // har matias added efter inotify
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+
 
         //public Bolig(int bolignr)
         //{
@@ -79,6 +93,8 @@ namespace FaellesSpisning.Boliger
         {
             return "Bolig Nr: " + bolignr + " Bu3: " + BørnU3 + " B: " + Børn + " U: " + Unge + " V: " + Voksne;
         }
+
+       
 
 
 

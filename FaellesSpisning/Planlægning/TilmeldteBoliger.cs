@@ -13,15 +13,11 @@ namespace FaellesSpisning.Planlægning
 {
     class TilmeldteBoliger : ObservableCollection<Bolig>
     {
-        public Bolig Fisk = new Bolig();
-
-        
-
-
-
+                
+        // added af matias for samletpris (no workerino)
         public TilmeldteBoliger() : base()
         {
-           this.Add(new Bolig() {});
+           this.Add(new Bolig() {samletpris = 0.0}); 
           
        
         }
@@ -32,6 +28,7 @@ namespace FaellesSpisning.Planlægning
             return json;
         }
         
+
 
 
 

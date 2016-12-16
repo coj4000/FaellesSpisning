@@ -8,14 +8,14 @@
     x:Class="FaellesSpisning.MainPage"
     mc:Ignorable="d">
     <Page.DataContext>
-                <ViewModel:FSViewModel/>
+        <ViewModel:FSViewModel/>
     </Page.DataContext>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.DataContext>
             <ViewModel:FSViewModel/>
         </Grid.DataContext>
         <ListView x:Name="listView" HorizontalAlignment="Left" Height="387" Margin="732,40,0,0" VerticalAlignment="Top" Width="265" ItemsSource="{Binding ViewSingleton.TilmeldListe}"/>
-           
+
         <Button x:Name="Tilføj" Content="Gem Pris" HorizontalAlignment="Left" Height="45" Margin="420,507,0,0" VerticalAlignment="Top" Width="108" Command="{Binding SavePrisCommand, Mode=TwoWay}"/>
         <Button x:Name="Rediger" Content="Gem Skema" HorizontalAlignment="Left" Height="45" Margin="576,440,0,0" VerticalAlignment="Top" Width="108" Command="{Binding SaveSkemaCommand}"/>
         <TextBox x:Name="Stilling_Copy" HorizontalAlignment="Left" Height="45" Margin="830,446,0,0" TextWrapping="Wrap" Text="Bolig" VerticalAlignment="Top" Width="90"/>
@@ -25,7 +25,7 @@
         <Button x:Name="Tilføj_Copy1" Content="Hent" HorizontalAlignment="Left" Height="45" Margin="920,507,0,0" VerticalAlignment="Top" Width="77"/>
         <Button x:Name="buttonredirect" Content="Beregning" HorizontalAlignment="Left" Margin="34,280,0,0" VerticalAlignment="Top" Click="Buttonredirect_OnClick" Height="59" Width="106"/>
         <ListView x:Name="listView1"  HorizontalAlignment="Left" Height="235" Margin="34,40,0,0" VerticalAlignment="Top" Width="524" ItemsSource="{Binding Skema}" SelectedItem="{Binding SelectedDag, Mode=TwoWay}"/>
-           
+
         <TextBox x:Name="TextBox" HorizontalAlignment="Left" Margin="34,446,0,0" TextWrapping="Wrap" Text="{Binding SelectedDag.Ret, Mode=TwoWay}" VerticalAlignment="Top" Height="45" Width="89" PlaceholderText="Ret"/>
 
         <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="168,446,0,0" TextWrapping="Wrap" Text="{Binding SelectedDag.ChefKok, Mode=TwoWay}" VerticalAlignment="Top" Height="45" Width="89" PlaceholderText="Chef Kok"/>
@@ -33,6 +33,7 @@
         <TextBox x:Name="textBox3" HorizontalAlignment="Left" Margin="439,446,0,0" TextWrapping="Wrap" Text="{Binding SelectedDag.Opryder, Mode=TwoWay}" VerticalAlignment="Top" Height="45" Width="89" PlaceholderText="Opryderer"/>
         <TextBox x:Name="textBox4" HorizontalAlignment="Left" Margin="168,507,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="45" Width="226" PlaceholderText="Pris"/>
         <Button x:Name="Hente" Content="Hent Skema" HorizontalAlignment="Left" Height="45" Margin="576,507,0,0" VerticalAlignment="Top" Width="108" Command="{Binding HentDataCommand}"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="168,574,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="226" Text="{Binding Samletpris, Mode=TwoWay}"/>
     </Grid>
-    
+
 </Page>

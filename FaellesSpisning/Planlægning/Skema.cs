@@ -29,6 +29,17 @@ namespace FaellesSpisning.Planlægning
             return json;
         }
 
+
+
+        
+        public void indsætJson(string jsonText)
+        {
+            List<Dag> NyListe = JsonConvert.DeserializeObject<List<Dag>>(jsonText);
+            foreach (var dag in NyListe)
+            {
+                this.Add(dag);
+            }
+        }
         public double TotalPris()
         {
             double pris = 0;

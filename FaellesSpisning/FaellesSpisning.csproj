@@ -101,6 +101,7 @@
     </Compile>
     <Compile Include="Planlægning\Arbejde.cs" />
     <Compile Include="Planlægning\Dag.cs" />
+    <Compile Include="Planlægning\HentDataCommand.cs" />
     <Compile Include="Planlægning\Menu.cs" />
     <Compile Include="Planlægning\OpretUge.cs" />
     <Compile Include="Planlægning\Skema.cs" />
@@ -118,6 +119,7 @@
     <Compile Include="ViewModel\ItemsChangeObservableCollection.cs" />
     <Compile Include="ViewModel\PlanViewModel.cs" />
     <Compile Include="ViewModel\RedigerDagCommand.cs" />
+    <Compile Include="ViewModel\SaveSkemaCommand.cs" />
     <Compile Include="ViewModel\TilmeldListeSingleton.cs" />
     <Compile Include="ViewModel\ViewModelSingleton.cs" />
   </ItemGroup>

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using FaellesSpisning.Planlægning;
 using Windows.Storage;
 using Windows.UI.Popups;
+using FaellesSpisning.Boliger;
 using Newtonsoft.Json;
 
 namespace FaellesSpisning.ViewModel
@@ -19,6 +20,7 @@ namespace FaellesSpisning.ViewModel
         public Planlægning.Dag selectedDag;
         public Planlægning.Skema Skema { get; set; }
 
+        public Planlægning.Bolig
         
 
 
@@ -45,6 +47,9 @@ namespace FaellesSpisning.ViewModel
 
             SaveSkemaCommand = new SaveSkemaCommand(GemDataTilDiskAsync);
             HentDataCommand = new HentDataCommand(HentdataFraDiscAsync);
+            SavePrisCommand = new SavePrisCommand(GemPrisTilDiskAsync);
+
+            Boligen = new bol
 
             localfolder = ApplicationData.Current.LocalFolder;
 
@@ -77,8 +82,23 @@ namespace FaellesSpisning.ViewModel
 
         public SaveSkemaCommand SaveSkemaCommand { get; set; }
         public HentDataCommand HentDataCommand { get; set; }
+        public SavePrisCommand SavePrisCommand { get; set; }
+        public HentPrisCommand HentPrisCommand { get; set; }
 
-        
+        public async void GemPrisTilDiskAsync()
+        {
+            string jsonText = this.Bolig.GetJson();
+            StorageFile file = await localfolder.CreateFileAsync(filnavn2, CreationCollisionOption.ReplaceExisting);
+            await FileIO.WriteTextAsync(file, jsonText);
+        }       
+
+        public async void HentPrisFraDiskAsync()
+        {
+            // her var der en clear.skema
+            StorageFile file = await localfolder.GetFileAsync(filnavn2);
+            string jsonText = await FileIO.ReadTextAsync(file);
+            Skema.indsætJson(jsonText);
+        }
 
 
         public Planlægning.Dag SelectedDag
@@ -91,6 +111,7 @@ namespace FaellesSpisning.ViewModel
             }
         }
         private readonly string filnavn = "JsonText.json";
+        private readonly string filnavn2 = "JsonPris.json";
 
         public ViewModel.ViewModelSingleton VMSingleton { get; set; } = ViewModel.ViewModelSingleton.Instance;
     }

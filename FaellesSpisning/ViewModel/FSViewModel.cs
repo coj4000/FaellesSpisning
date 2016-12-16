@@ -20,7 +20,7 @@ namespace FaellesSpisning.ViewModel
         public Planlægning.Dag selectedDag;
         public Planlægning.Skema Skema { get; set; }
 
-        public Planlægning.Bolig
+        
         
 
 
@@ -49,7 +49,7 @@ namespace FaellesSpisning.ViewModel
             HentDataCommand = new HentDataCommand(HentdataFraDiscAsync);
             SavePrisCommand = new SavePrisCommand(GemPrisTilDiskAsync);
 
-            Boligen = new bol
+            
 
             localfolder = ApplicationData.Current.LocalFolder;
 
@@ -87,7 +87,7 @@ namespace FaellesSpisning.ViewModel
 
         public async void GemPrisTilDiskAsync()
         {
-            string jsonText = this.Bolig.GetJson();
+            string jsonText = this.Skema.GetJson();
             StorageFile file = await localfolder.CreateFileAsync(filnavn2, CreationCollisionOption.ReplaceExisting);
             await FileIO.WriteTextAsync(file, jsonText);
         }       

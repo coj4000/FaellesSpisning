@@ -85,6 +85,7 @@ namespace FaellesSpisning.ViewModel
         public SavePrisCommand SavePrisCommand { get; set; }
         public HentPrisCommand HentPrisCommand { get; set; }
 
+        // skema er her (skal måske ændres til bolig? eller lave pris)?
         public async void GemPrisTilDiskAsync()
         {
             string jsonText = this.Skema.GetJson();

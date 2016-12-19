@@ -18,7 +18,7 @@ namespace FaellesSpisning.Planlægning
         // added af matias for samletpris (no workerino)
         public TilmeldteBoliger() : base()
         {
-           this.Add(new Pris() {Samletpris = 0}); 
+           
            
            
 

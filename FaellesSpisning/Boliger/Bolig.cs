@@ -79,9 +79,24 @@ namespace FaellesSpisning.Boliger
            return samletpris/AntalKuverter();
        }
 
-       public double SamletPrisPerBolig()
+       /*public double SamletPrisPerBolig()
        {
            return AntalKuverter()*GennemsnitsKuvertspris();
+       }*/
+
+       public double BørnePris()
+       {
+           return GennemsnitsKuvertspris()*0.25;
+       }
+
+       public double UngePris()
+       {
+           return GennemsnitsKuvertspris()*0.5;
+       }
+
+       public double Voksenpris()
+       {
+           return GennemsnitsKuvertspris();
        }
         
 

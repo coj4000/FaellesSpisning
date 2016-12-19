@@ -9,12 +9,30 @@ namespace FaellesSpisning.Matematik
 {
     class Pris : INotifyPropertyChanged
     {
+        private int _bolignr;
         private double _samletpris;
 
         public Pris()
         {
 
         }
+
+        public Pris(int bolignr, double samletpris)
+        {
+            _bolignr = bolignr;
+            _samletpris = samletpris;
+        }
+
+        public int Bolignr
+        {
+            get { return _bolignr; }
+            set
+            {
+                _bolignr = value;
+                OnPropertyChanged(nameof(Bolignr));
+            }
+        }
+
 
         public double Samletpris
         {

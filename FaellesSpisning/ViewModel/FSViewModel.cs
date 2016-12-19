@@ -8,6 +8,7 @@ using FaellesSpisning.Planlægning;
 using Windows.Storage;
 using Windows.UI.Popups;
 using FaellesSpisning.Boliger;
+using FaellesSpisning.Matematik;
 using Newtonsoft.Json;
 
 namespace FaellesSpisning.ViewModel
@@ -22,6 +23,7 @@ namespace FaellesSpisning.ViewModel
         // shiet til samletpris (no work)
         public Planlægning.TilmeldteBoliger Samletpris { get; set; }
         public Matematik.Pris selectedPris { get; set; }
+        public TilmeldListe Tilmelde { get; set; }
         
 
 
@@ -56,10 +58,13 @@ namespace FaellesSpisning.ViewModel
             HentPrisCommand = new HentPrisCommand(HentPrisFraDiskAsync);
 
             // added af matias til Samletpris (lul no work  ***NEW ok work but still shit)
-            Samletpris = new Planlægning.TilmeldteBoliger();
+            Samletpris = new TilmeldteBoliger();
             
+            SelectedPris = new Pris();
+            Tilmelde = new TilmeldListe();
 
             localfolder = ApplicationData.Current.LocalFolder;
+            
 
 
         }
@@ -96,6 +101,13 @@ namespace FaellesSpisning.ViewModel
         
         public async void GemPrisTilDiskAsync()
         {
+            double ugepris = SelectedPris.Samletpris;
+            double prisPerKuvert = Tilmelde.prisPrKuvert(ugepris);
+            foreach (var bolig in Tilmelde)
+            {
+               Samletpris.Add(new Pris(bolig.bolignr, bolig.AntalKuverter()*prisPerKuvert)); 
+            }
+
             string jsonText = this.Samletpris.GetJson();
             StorageFile file = await localfolder.CreateFileAsync(filnavn2, CreationCollisionOption.ReplaceExisting);
             await FileIO.WriteTextAsync(file, jsonText);

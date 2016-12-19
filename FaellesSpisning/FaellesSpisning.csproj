@@ -102,6 +102,7 @@
     <Compile Include="Matematik\Pris.cs" />
     <Compile Include="Planlægning\Arbejde.cs" />
     <Compile Include="Planlægning\Dag.cs" />
+    <Compile Include="ViewModel\BoligViewModel.cs" />
     <Compile Include="ViewModel\HentDataCommand.cs" />
     <Compile Include="Planlægning\Menu.cs" />
     <Compile Include="Planlægning\OpretUge.cs" />

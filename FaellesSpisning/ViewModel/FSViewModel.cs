@@ -133,5 +133,7 @@ namespace FaellesSpisning.ViewModel
         private readonly string filnavn2 = "JsonPris.json";
 
         public ViewModel.ViewModelSingleton VMSingleton { get; set; } = ViewModel.ViewModelSingleton.Instance;
+
+        // meme
     }
 }

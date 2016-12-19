@@ -134,6 +134,6 @@ namespace FaellesSpisning.ViewModel
 
         public ViewModel.ViewModelSingleton VMSingleton { get; set; } = ViewModel.ViewModelSingleton.Instance;
 
-        // meme
+        // meme2
     }
 }

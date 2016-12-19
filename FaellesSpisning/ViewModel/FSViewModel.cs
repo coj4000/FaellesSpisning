@@ -21,6 +21,7 @@ namespace FaellesSpisning.ViewModel
         public Planlægning.Skema Skema { get; set; }
         // shiet til samletpris (no work)
         public Planlægning.TilmeldteBoliger Samletpris { get; set; }
+        public Matematik.Pris selectedPris { get; set; }
         
 
 
@@ -93,7 +94,7 @@ namespace FaellesSpisning.ViewModel
         // skema er her (skal måske ændres til bolig? eller lave pris)?
         public async void GemPrisTilDiskAsync()
         {
-            string jsonText = this.Skema.GetJson();
+            string jsonText = this.Samletpris.GetJson();
             StorageFile file = await localfolder.CreateFileAsync(filnavn2, CreationCollisionOption.ReplaceExisting);
             await FileIO.WriteTextAsync(file, jsonText);
         }       
@@ -114,6 +115,16 @@ namespace FaellesSpisning.ViewModel
             {
                 selectedDag = value;
                 OnPropertyChanged(nameof(SelectedDag));
+            }
+        }
+
+        public Matematik.Pris SelectedPris
+        {
+            get { return selectedPris; }
+            set
+            {
+                selectedPris = value;
+                OnPropertyChanged(nameof(SelectedPris));
             }
         }
         private readonly string filnavn = "JsonText.json";

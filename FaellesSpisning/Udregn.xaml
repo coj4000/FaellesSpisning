@@ -1,14 +1,20 @@
 ﻿<Page
-    x:Class="FaellesSpisning.Udregn"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:FaellesSpisning"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ViewModel="using:FaellesSpisning.ViewModel"
+    x:Class="FaellesSpisning.Udregn"
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="389,309,0,0" VerticalAlignment="Top" Click="Button_OnClick"/>
+        <Grid.DataContext>
+            <ViewModel:FSViewModel/>
+        </Grid.DataContext>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="71,59,0,0" VerticalAlignment="Top" Click="Button_OnClick"/>
+        <TextBlock x:Name="Pris" HorizontalAlignment="Left" Margin="202,198,0,0" TextWrapping="Wrap" Text="Pris" VerticalAlignment="Top" Height="95" Width="158"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="526,198,0,0" VerticalAlignment="Top" Width="168"/>
 
     </Grid>
 </Page>

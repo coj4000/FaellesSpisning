@@ -18,11 +18,7 @@ namespace FaellesSpisning.Planlægning
         // added af matias for samletpris (no workerino)
         public TilmeldteBoliger() : base()
         {
-           
-           
-           
-
-
+                                
         }
 
         public string GetJson()
@@ -39,9 +35,6 @@ namespace FaellesSpisning.Planlægning
                 this.Add(pris);
             }
         }
-
-
-
 
     }
 }

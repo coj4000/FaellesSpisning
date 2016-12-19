@@ -9,7 +9,6 @@ namespace FaellesSpisning.Planlægning
     class Menu
     {
         public string ret { get; set; }
-        public int pris { get; set; }
        
     }
 }

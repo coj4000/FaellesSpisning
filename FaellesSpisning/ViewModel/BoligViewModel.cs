@@ -25,7 +25,7 @@ namespace FaellesSpisning.ViewModel
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
         }
-
+        
         public Boliger.Bolig SelectedBolig
         {
             get { return selectedBolig; }

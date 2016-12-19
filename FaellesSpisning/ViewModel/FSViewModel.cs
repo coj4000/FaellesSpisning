@@ -53,7 +53,9 @@ namespace FaellesSpisning.ViewModel
 
             SavePrisCommand = new SavePrisCommand(GemPrisTilDiskAsync);
 
-            // added af matias til Samletpris (lul no work)
+            HentPrisCommand = new HentPrisCommand(HentPrisFraDiskAsync);
+
+            // added af matias til Samletpris (lul no work  ***NEW ok work but still shit)
             Samletpris = new Planlægning.TilmeldteBoliger();
             
 
@@ -91,7 +93,7 @@ namespace FaellesSpisning.ViewModel
         public SavePrisCommand SavePrisCommand { get; set; }
         public HentPrisCommand HentPrisCommand { get; set; }
 
-        // skema er her (skal måske ændres til bolig? eller lave pris)?
+        
         public async void GemPrisTilDiskAsync()
         {
             string jsonText = this.Samletpris.GetJson();
@@ -101,10 +103,10 @@ namespace FaellesSpisning.ViewModel
 
         public async void HentPrisFraDiskAsync()
         {
-            // her var der en clear.skema
+            this.Samletpris.Clear();
             StorageFile file = await localfolder.GetFileAsync(filnavn2);
             string jsonText = await FileIO.ReadTextAsync(file);
-            Skema.indsætJson(jsonText);
+            Samletpris.indsætJson(jsonText);
         }
 
 

@@ -32,6 +32,7 @@
         <ListView x:Name="listView2" HorizontalAlignment="Left" Height="73" Margin="168,557,0,0" VerticalAlignment="Top" Width="226" ItemsSource="{Binding Samletpris, Mode=TwoWay}" SelectedItem="{Binding SelectedPris, Mode=TwoWay}"/>
         <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="733,446,0,0" VerticalAlignment="Top" Width="182" Height="39"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="733,40,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="387" Width="281" FontSize="10" TextChanged="textBox_TextChanged"/>
+        <Button x:Name="button" Content="Hent Pris" HorizontalAlignment="Left" Margin="420,577,0,0" VerticalAlignment="Top" Height="43" Width="108" Command="{Binding HentPrisCommand}"/>
     </Grid>
 
 </Page>

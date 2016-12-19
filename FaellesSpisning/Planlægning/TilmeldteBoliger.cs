@@ -19,8 +19,8 @@ namespace FaellesSpisning.Planlægning
         public TilmeldteBoliger() : base()
         {
            this.Add(new Pris() {Samletpris = 0}); 
-           this.Add(new Pris() {Samletpris = 0});
-           this.Add(new Pris() {Samletpris = 0 });
+           
+           
 
 
         }
@@ -30,7 +30,15 @@ namespace FaellesSpisning.Planlægning
             string json = JsonConvert.SerializeObject(this);
             return json;
         }
-        
+
+        public void indsætJson(string jsonText)
+        {
+            List<Pris> NyListe = JsonConvert.DeserializeObject<List<Pris>>(jsonText);
+            foreach (var pris in NyListe)
+            {
+                this.Add(pris);
+            }
+        }
 
 
 

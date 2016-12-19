@@ -43,6 +43,8 @@ namespace FaellesSpisning.Matematik
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
         }
+
+
     }
 }
 

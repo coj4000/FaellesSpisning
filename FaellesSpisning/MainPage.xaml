@@ -34,6 +34,7 @@
         <TextBox x:Name="textBox4" HorizontalAlignment="Left" Margin="168,507,0,0" TextWrapping="Wrap" Text="{Binding SelectedPris.Samletpris, Mode=TwoWay}" VerticalAlignment="Top" Height="45" Width="226" PlaceholderText="Pris"/>
         <Button x:Name="Hente" Content="Hent Skema" HorizontalAlignment="Left" Height="45" Margin="576,507,0,0" VerticalAlignment="Top" Width="108" Command="{Binding HentDataCommand}"/>
         <ListView x:Name="listView2" HorizontalAlignment="Left" Height="73" Margin="168,557,0,0" VerticalAlignment="Top" Width="226" ItemsSource="{Binding Samletpris, Mode=TwoWay}" SelectedItem="{Binding SelectedPris, Mode=TwoWay}"/>
+        <Button x:Name="button" Content="Hent Pris" HorizontalAlignment="Left" Margin="420,577,0,0" VerticalAlignment="Top" Height="43" Width="108" Command="{Binding HentPrisCommand}"/>
     </Grid>
 
 </Page>

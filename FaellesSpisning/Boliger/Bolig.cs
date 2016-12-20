@@ -19,7 +19,6 @@ namespace FaellesSpisning.Boliger
        public double Voksne;
        public int bolignr;
        public double PrisPerDag;
-       //public double AntalKuverterIAlt;
        public double samletpris;
        public bool mandag;
        public bool tirsdag;
@@ -38,12 +37,6 @@ namespace FaellesSpisning.Boliger
             }
         }
 
-
-
-        //public Bolig(int bolignr)
-        //{
-        //    this.bolignr = bolignr;
-        //}
 
 
 
@@ -78,11 +71,7 @@ namespace FaellesSpisning.Boliger
        {
            return samletpris/AntalKuverter();
        }
-
-       /*public double SamletPrisPerBolig()
-       {
-           return AntalKuverter()*GennemsnitsKuvertspris();
-       }*/
+       
 
        public double BørnePris()
        {
@@ -108,27 +97,7 @@ namespace FaellesSpisning.Boliger
         {
             return "Bolig Nr: " + bolignr + " Bu3: " + BørnU3 + " B: " + Børn + " U: " + Unge + " V: " + Voksne;
         }
-
        
-
-
-
-       // public Bolig(double BørnU3, double Børn, double Unge, double Voknse)
-       // {
-       //     this.BørnU3 = BørnU3;
-       //     this.Børn = Børn;
-       //     this.Unge = Unge;
-       //     this.Voksne = Voksne;
-       // }
-
-       //public double DeltagerSum()
-       //{
-       //    double result = 0;
-       //    result = result + BørnU3;
-       //    result = result + Børn;
-       //    result = result + Unge;
-       //    result = result + Voksne;
-       //    return result;
 
        public double SumAfDeltagere()
        {
@@ -138,7 +107,7 @@ namespace FaellesSpisning.Boliger
            return total;
        }
 
-       //}
+
         public void totalKuvert(double husKurveter)
        {
            if (husKuverter < 0)

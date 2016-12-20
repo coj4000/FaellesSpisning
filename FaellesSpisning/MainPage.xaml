@@ -19,7 +19,6 @@
         <Button x:Name="Rediger" Content="Gem Skema" HorizontalAlignment="Left" Height="45" Margin="576,440,0,0" VerticalAlignment="Top" Width="108" Command="{Binding SaveSkemaCommand}"/>
         <Button x:Name="Tilføj_Copy" Content="Add" HorizontalAlignment="Left" Height="45" Margin="937,446,0,0" VerticalAlignment="Top" Width="77" Click="Tilføj_Copy_Click"/>
         <Button x:Name="Tilføj_Copy1" Content="Clear" HorizontalAlignment="Left" Height="45" Margin="937,507,0,0" VerticalAlignment="Top" Width="77" Click="Tilføj_Copy1_Click"/>
-        <Button x:Name="buttonredirect" Content="Beregning" HorizontalAlignment="Left" Margin="34,280,0,0" VerticalAlignment="Top" Click="Buttonredirect_OnClick" Height="59" Width="106"/>
         <ListView x:Name="listView1"  HorizontalAlignment="Left" Height="235" Margin="34,40,0,0" VerticalAlignment="Top" Width="524" ItemsSource="{Binding Skema}" SelectedItem="{Binding SelectedDag, Mode=TwoWay}"/>
 
         <TextBox x:Name="TextBox" HorizontalAlignment="Left" Margin="34,446,0,0" TextWrapping="Wrap" Text="{Binding SelectedDag.Ret, Mode=TwoWay}" VerticalAlignment="Top" Height="45" Width="89" PlaceholderText="Ret"/>

@@ -110,9 +110,6 @@
     <Compile Include="Planlægning\TilmeldListe.cs" />
     <Compile Include="Planlægning\TilmeldteBoliger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Udregn.xaml.cs">
-      <DependentUpon>Udregn.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UpdateDag.xaml.cs">
       <DependentUpon>UpdateDag.xaml</DependentUpon>
     </Compile>
@@ -151,10 +148,6 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Udregn.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UpdateDag.xaml">
       <SubType>Designer</SubType>

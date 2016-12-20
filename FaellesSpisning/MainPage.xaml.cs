@@ -85,11 +85,7 @@ namespace FaellesSpisning
         }
 
 
-        private void Buttonredirect_OnClick(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Udregn), null);
-        }
-
+        
         private void textBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 

@@ -15,11 +15,11 @@ namespace FaellesSpisning.Planlægning
     {
         public Skema() : base()
         {
-            this.Add(new Dag() {Dage = "Mandag", Nummer = 1, Ret = "", ChefKok = "TEST", Kok = "", Opryder = ""});
-            this.Add(new Dag() {Dage = "Tirsdag", Nummer = 2, Ret = "", ChefKok = "", Kok = "", Opryder = ""});
-            this.Add(new Dag() {Dage = "Onsdag", Nummer = 3, Ret = "", ChefKok = "", Kok = "", Opryder = ""});
-            this.Add(new Dag() {Dage = "Torsdag", Nummer = 4, Ret = "", ChefKok = "", Kok = "", Opryder = ""});
-            this.Add(new Dag() {Dage = "Fredag", Nummer = 5, Ret = "", ChefKok = "", Kok = "", Opryder = ""});
+            this.Add(new Dag() {Dage = "Dage.", Nummer = 1, Ret = "Under her.", ChefKok = "Under her.", Kok = "Under her.", Opryder = "Under her"});
+            this.Add(new Dag() {Dage = "Mandag", Nummer = 2, Ret = "", ChefKok = "", Kok = "", Opryder = ""});
+            this.Add(new Dag() {Dage = "Tirsdag", Nummer = 3, Ret = "", ChefKok = "", Kok = "", Opryder = ""});
+            this.Add(new Dag() {Dage = "Onsdag", Nummer = 4, Ret = "", ChefKok = "", Kok = "", Opryder = ""});
+            this.Add(new Dag() {Dage = "Torsdag", Nummer = 5, Ret = "", ChefKok = "", Kok = "", Opryder = ""});
         }
 
        
